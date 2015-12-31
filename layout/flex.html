@@ -1,0 +1,35 @@
+<!-- 三行自适应+两列自适应，网易云音乐DJ页面 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex fit layout</title>
+	<style type="text/css">
+		html, body{height:100%;}
+		html, body{margin: 0;text-align: center;}
+		.head, .foot{line-height: 100px;background-color: #000;color: #fff;}
+		.side{background-color: yellow;}
+		.main{background-color: pink;}
+
+		
+
+		/* core css */
+		body{display: flex; flex-flow:column;}
+		.head, .foot{height: 100px;}
+		.body{flex: 1; display: flex;}
+		.side{width: 200px;}
+		.main{flex: 1;}
+		/* end of core css */
+
+	</style>
+</head>
+<body>
+	<div class="head">head</div>
+	<div class="body">
+		<div class="side">main</div>
+		<div class="main">side</div>
+	</div>
+	<div class="foot">foot</div>
+</body>
+</html>
